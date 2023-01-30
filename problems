@@ -1,0 +1,16 @@
+//Array left Rotation
+
+function rotLeft(arry, rotations){
+    const rotetArry = arry.concat();
+    for(let i=1;i<rotations;i++){
+        const frontItem= rotetArry.shift();
+        rotetArry.push(frontItem);
+    }
+    return rotetArry;
+}
+
+const numberRotation=4;
+const simpleArry =[1,7,3,4,2,6,3,9];
+
+
+console.log(rotLeft(simpleArry,numberRotation));
